@@ -2,16 +2,16 @@ var vehicles = [];
 var vehicles2 = [];
 var wind;
 
-function preload(){
- bgMusic = loadSound('assets/spring.mp3');
-}
+// function preload(){
+//  bgMusic = loadSound('assets/spring.mp3');
+// }
 
 function setup() {
  text = createP("Drag mouse to generate new leaves");
  text.position(10,20);
  text = createP("Click mouse to generate new flowers");
  text.position(10,40);
- bgMusic.play();
+ // bgMusic.play();
 
  createCanvas(windowWidth, windowHeight);
  for (var i = 0; i < 10; i++) {
