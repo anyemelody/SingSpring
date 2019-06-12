@@ -28,7 +28,7 @@ function FlowerVehicle(x, y) {
   var force = p5.Vector.mult(g, this.flower.mass);
   force.add(this.wind);
   this.acc = p5.Vector.div(force, this.flower.mass);
-  console.log(this.wind);
+  // console.log(this.wind);
    // this.acc = p5.Vector.mult(g, this.flower.mass);
   // if (mouseIsPressed) {
   //  if ((mouseX-pmouseX)>=0) {
@@ -38,7 +38,7 @@ function FlowerVehicle(x, y) {
    //  }
    // this.acc.add(this.wind);
    // }
-  
+
  };
 
  this.border = function() {

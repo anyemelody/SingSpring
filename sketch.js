@@ -3,7 +3,7 @@ var vehicles2 = [];
 var wind;
 
 function preload(){
- bgMusic = loadSound('spring.mp3');
+ bgMusic = loadSound('assets/spring.mp3');
 }
 
 function setup() {
@@ -12,7 +12,7 @@ function setup() {
  text = createP("Click mouse to generate new flowers");
  text.position(10,40);
  bgMusic.play();
- 
+
  createCanvas(windowWidth, windowHeight);
  for (var i = 0; i < 10; i++) {
   vehicles.push(new FlowerVehicle(random(width), random(height / 2)));
@@ -36,7 +36,7 @@ function draw() {
    	vehicles.splice(i,1);
    }
  }
-  
+
  if (vehicles2.length > 0) {
   for (var i = 0; i < vehicles2.length; i++) {
    vehicles2[i].run();
